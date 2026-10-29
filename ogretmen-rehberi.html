@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Çarpan Avı · Öğretmen Rehberi</title>
+<meta name="description" content="Çarpan Avı matematik oyununun Türkiye Yüzyılı Maarif Modeli öğrenme çıktılarıyla eşlemesi ve sınıfta kullanım önerileri.">
+<style>
+@page { size: A4; margin: 11mm 13mm 11mm 13mm; }
+:root { --ink:#1B1161; --soft:#4E4A7A; --line:#D9D6EE; --accent:#5A32C2; --gold:#F2B705; --paper:#FFFFFF; --tint:#F4F1FF; --green:#1E7D4F; }
+* { box-sizing:border-box; }
+html, body { margin:0; background:var(--paper); color:var(--ink); font:9.6pt/1.33 "Segoe UI", Arial, "Noto Sans", sans-serif; }
+.page { width:184mm; margin:0 auto; padding:0; }
+@media screen { body { background:#ECEAF6; padding:12mm 0; } .page { background:#fff; padding:14mm 15mm; margin-bottom:10mm; box-shadow:0 2px 12px rgba(0,0,0,.12); min-height:297mm; } }
+.brk { break-after:page; page-break-after:always; }
+h1 { font-size:19pt; margin:0 0 1.5mm; letter-spacing:-.2px; }
+h2 { font-size:11.5pt; margin:3.5mm 0 1.5mm; color:var(--accent); border-bottom:1.5px solid var(--line); padding-bottom:1mm; }
+h3 { font-size:10pt; margin:2.2mm 0 .8mm; }
+p { margin:0 0 2mm; }
+ul, ol { margin:0 0 2mm 5mm; padding:0; }
+li { margin:0 0 1mm; }
+.lead { color:var(--soft); font-size:9.3pt; }
+.head { display:flex; align-items:center; gap:5mm; margin-bottom:2mm; }
+.logo { width:22mm; height:22mm; border-radius:5mm; background:#1F3A8F; display:flex; align-items:center; justify-content:center; flex:none; }
+.logo svg { width:16mm; height:16mm; }
+.tag { display:inline-block; background:var(--tint); color:var(--accent); border-radius:999px; padding:.6mm 3mm; font-size:9pt; margin-right:1.5mm; }
+.kv { display:grid; grid-template-columns:1fr 1fr 1fr; gap:3mm; margin:1.5mm 0 2mm; }
+.kv div { background:var(--tint); border-radius:3mm; padding:1.8mm 3mm; font-size:8.8pt; }
+.kv b { display:block; font-size:11.5pt; color:var(--accent); }
+table { width:100%; border-collapse:collapse; font-size:8.6pt; margin:1mm 0 1.5mm; }
+th, td { border:1px solid var(--line); padding:1.2mm 1.8mm; vertical-align:top; text-align:left; }
+th { background:var(--tint); color:var(--ink); font-weight:600; }
+td.n { white-space:nowrap; font-weight:600; color:var(--accent); }
+code, .kod { font-family:Consolas, "Courier New", monospace; font-size:9pt; color:var(--ink); background:#F3F2F8; padding:0 1mm; border-radius:1mm; }
+.box { border:1.5px solid var(--line); border-radius:3mm; padding:2.2mm 3.5mm; margin:1.5mm 0 2.5mm; background:#FBFAFF; }
+.box.gold { border-color:var(--gold); background:#FFF9E3; }
+.cols { display:grid; grid-template-columns:1fr 1fr; gap:5mm; }
+.foot { display:flex; align-items:center; justify-content:space-between; gap:5mm; border-top:1.5px solid var(--line); padding-top:2.5mm; margin-top:3mm; font-size:8.6pt; color:var(--soft); }
+.qr { width:24mm; height:24mm; flex:none; }
+.small { font-size:8.2pt; color:var(--soft); }
+.steps li { margin-bottom:1.6mm; }
+.disc { color:var(--green); font-weight:600; }
+</style>
+</head>
+<body>
+
+<section class="page brk">
+<div class="head">
+  <div class="logo" aria-hidden="true">
+    <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="30" fill="none" stroke="#F2B705" stroke-width="9"/><g stroke="#F2B705" stroke-width="9" stroke-linecap="round"><line x1="50" y1="8" x2="50" y2="20"/><line x1="50" y1="80" x2="50" y2="92"/><line x1="8" y1="50" x2="20" y2="50"/><line x1="80" y1="50" x2="92" y2="50"/></g><g stroke="#fff" stroke-width="10" stroke-linecap="round"><line x1="37" y1="37" x2="63" y2="63"/><line x1="63" y1="37" x2="37" y2="63"/></g></svg>
+  </div>
+  <div>
+    <h1>Çarpan Avı · Öğretmen Rehberi</h1>
+    <p class="lead">Asal çarpanlar, bölünebilme, üslü ifadeler ve ortak bölenleri oyunla pekiştiren ücretsiz bir matematik oyunu. Bu rehber, oyunun bölümlerini Türkiye Yüzyılı Maarif Modeli (2024) matematik öğrenme çıktılarıyla eşler ve sınıfta nasıl kullanılacağını anlatır.</p>
+    <span class="tag">6. sınıf · Sayılar ve Nicelikler (1)</span><span class="tag">8. sınıf · Sayılar ve Nicelikler</span><span class="tag">5 ve 7. sınıf: pekiştirme</span>
+  </div>
+</div>
+
+<div class="kv">
+  <div><b>500 bölüm</b>5 kural, kolaydan zora; 1–100 ücretsiz ve sınırsız</div>
+  <div><b>Hesap yok</b>Kayıt, üyelik, kişisel veri yok; internetsiz oynanır</div>
+  <div><b>2–3 dakika</b>Bir bölüm bu kadar sürer; ısınma ve istasyon için uygun</div>
+</div>
+
+<h2>Oyun nasıl oynanır?</h2>
+<p>Sarı kutuda bir <b>hedef sayı</b> vardır (ör. 36). Yukarıdan sayılar düşer. Öğrenci yalnızca hedefi <b>bölen</b> sayılara dokunur; dokunulan sayıların <b>çarpımı</b> ekranda büyür ve hedefe eşit olunca bölüm biter. Yanlış sayıya dokunmak bir can götürür ve oyun nedenini söyler (“29, 36’yı bölmez”). Her yanlış, anında ve gerekçeli geri bildirimdir; bu yüzden oyun kendi başına küçük bir biçimlendirici değerlendirme aracıdır.</p>
+
+<h2>Bölümler ve öğrenme çıktıları</h2>
+<table>
+<tr><th style="width:17mm">Bölümler</th><th style="width:44mm">Oyun kuralı</th><th>Desteklediği öğrenme çıktısı (TYMM 2024, kod ve metin programdan aynen)</th></tr>
+<tr><td class="n">1–50</td><td><b>Asal çarpanlar.</b> Hedefin asal çarpanları tekrarlarıyla yakalanır: 12 için 2, 2 ve 3. Düşen sayılar yalnızca asallar ve çeldiriciler.</td><td><span class="kod">MAT.6.1.3</span> Bir doğal sayının asal olma durumunu ve asal çarpanlarını çözümleyebilme — a) asal olup olmadığını ve asal çarpanlarını belirler.</td></tr>
+<tr><td class="n">51–150</td><td><b>Çarpımla oluştur.</b> Birleşik bölenler de geçerli: 36 = 4·9 ya da 12·3. 101’den sonra süre sınırı.</td><td><span class="kod">MAT.6.1.1</span> Bir doğal sayının çarpan ve katlarına yönelik muhakeme yapabilme — b) çarpan ve katlara ilişkin genellemeleri belirler; <span class="kod">MAT.6.1.3</span> b) sayı ile asal çarpanları arasındaki ilişkileri belirler.</td></tr>
+<tr><td class="n">151–300</td><td><b>Sepet.</b> Tek can ve sınırlı yer; hedef en az sayıda bölenle oluşturulur (360 = 40·9), sütunlar yer değiştirir.</td><td><span class="kod">MAT.6.1.1</span> d) problemlerin pratik yoldan çözümüne yönelik önermenin gerekçelerini sunar; <span class="kod">MAT.6.1.2</span> d) 2, 3, 4, 5, 6, 9 ve 10 ile bölünebilme kriterlerinin kullanışlılığını değerlendirir (hızlı eleme için).</td></tr>
+<tr><td class="n">301–400</td><td><b>Üslü sayılar.</b> Yalnızca tek asalın kuvvetleri yakalanır: 72 için 8 = 2³ ve 9 = 3²; 6 gibi karışık sayılar yanlıştır. Üst bilgide 2³ · 3² gösterimi.</td><td><span class="kod">MAT.8.1.1</span> Farklı bağlamlardaki üslü ifadelere, özelliklerine ve üslü ifadelerle yapılan işlemlere ilişkin çıkarım yapabilme — a, b. Asal çarpanların üslü gösterimi için <span class="kod">MAT.6.1.3</span> ile köprü.</td></tr>
+<tr><td class="n">401–500</td><td><b>EBOB.</b> İki sayı gösterilir (84 ve 120); ikisini de bölen sayılar yakalanır, çarpım en büyük ortak bölene ulaşınca biter. Yalnızca birini bölen sayılar tuzaktır.</td><td><span class="kod">MAT.6.1.4</span> Günlük hayat problemleri ya da matematiksel durumlar üzerinden ortak kat ve ortak böleni yorumlayabilme — a) iki sayının ortak bölenlerini inceler; c) ortak bölenleri kendi ifadeleriyle açıklar.</td></tr>
+</table>
+<p class="small">Kaynak: Türkiye Yüzyılı Maarif Modeli Ortaokul Matematik Dersi Öğretim Programı (2024), tymm.meb.gov.tr; 6. sınıf 1. tema ve 8. sınıf 1. tema sayfaları. Bölünebilme kuralları (<span class="kod">MAT.6.1.2</span>) tüm bölümlerde örtük olarak çalışır: öğrenci düşen sayının hedefi bölüp bölmediğine saniyeler içinde karar verir. 5. sınıf için oyun çarpım tablosu ve bölme pekiştirmesi, 7. sınıf için tekrar olarak uygundur.</p>
+
+<div class="box gold">
+<b>Öğretmen için 3 kısa not.</b> (1) 1–50’de 1 asla doğru değildir; “1 neden asal değil?” tartışması için iyi bir fırsat. (2) 301–400’de 6 ve 12 gibi iki farklı asal içeren sayılar yanlış sayılır; öğrenciler bunu önce “haksızlık” bulur, sonra 72 = 2³·3² yazımını kendileri keşfeder. (3) 401–500’de hedef gizlidir: öğrenci EBOB’u hesaplamaz, ortak bölenleri yakalayarak <em>inşa eder</em>; bölüm sonunda “EBOB(84, 120) = 12 = 2² · 3” açıklaması görünür.
+</div>
+</section>
+
+<section class="page">
+<h2>Sınıfta kullanım önerileri</h2>
+<div class="cols">
+<div>
+<h3>1. Beş dakikalık ısınma (tahta)</h3>
+<ol class="steps">
+<li>Oyunu tahtaya ya da projektöre yansıtın, o günün konusuna uyan bir bölümü açın (asal çarpanlar için 20–40, üslü ifadeler için 301–320).</li>
+<li>Düşen sayıyı sınıf birlikte değerlendirir: “Böler mi, bölmez mi? Neden?” Öğretmen sınıfın kararıyla dokunur.</li>
+<li>Yanlış kararlarda oyunun verdiği gerekçeyi okuyun ve bir öğrenciden kendi cümleleriyle tekrar etmesini isteyin (<span class="kod">MAT.6.1.1</span> d, <span class="kod">MAT.6.1.4</span> c).</li>
+</ol>
+<h3>2. İstasyon ya da ev çalışması</h3>
+<ul>
+<li>Bir bölüm aralığı verin (“bu hafta 51–60”). Bölüm sonundaki <b>Ayrıntılar</b> ekranı doğru/yanlış sayısı ve isabet yüzdesini gösterir; öğrenci bunu defterine not eder.</li>
+<li>Oyun ilerlemeyi cihazda tutar; sınıf tabletinde Ayarlar → <b>İlerlemeyi sıfırla</b> ile yeni öğrenciye temiz başlangıç verilir.</li>
+<li>Değerlendirme için ekran görüntüsü yerine öğrencinin bölümde yakaladığı sayıları ve neden doğru olduklarını yazması istenebilir.</li>
+</ul>
+<h3>3. Tartışma soruları</h3>
+<ul>
+<li>“36’yı 4·9 ile de 2·2·3·3 ile de bitirdik; hangisi daha az dokunuş? Neden?” (çarpan–asal çarpan ilişkisi)</li>
+<li>“Hedef 100 iken 15 düşerse dokunmadan nasıl eleriz?” (5’e bölünür ama 3’e bölünmez: bölünebilme kriterleri)</li>
+<li>“EBOB bölümünde 8, 84’ü bölmüyor ama 120’yi bölüyor; neden yanlış?” (ortak bölen kavramı)</li>
+</ul>
+</div>
+<div>
+<h3>4. Farklılaştırma</h3>
+<ul>
+<li><b>Destekleme:</b> Ana ekrandaki <b>Kolay mod</b> sayıları yaklaşık yarı hızda akıtır ve 51. bölümden sonra çarpım yerine bölen merdiveni gösterir (360 → 45 → 5). 1–50 aralığı asal sayı tanıma için yeterlidir.</li>
+<li><b>Zenginleştirme:</b> 301–400 (üslü) ve 401–500 (EBOB) 6. sınıf için ileri düzeydir; hızlı öğrenciler için hedef aralık olarak verilebilir. 151–300’de “en az sayıyla bitirme” kısa yol bonusu strateji geliştirmeyi ödüllendirir.</li>
+<li>Her yeni kuralın geldiği bölümde (51, 101, 151, 201, 301, 401) oyun kuralı kart ve oynanabilir kısa bir dersle anlatır; öğrenciyi önceden hazırlamak gerekmez.</li>
+</ul>
+<h3>5. Program bağlantısı için kısa yol</h3>
+<table>
+<tr><th>Ders konusu</th><th>Önerilen bölümler</th></tr>
+<tr><td>Asal sayılar, asal çarpanlara ayırma</td><td class="n">1–50</td></tr>
+<tr><td>Çarpanlar ve katlar, bölünebilme</td><td class="n">51–150</td></tr>
+<tr><td>Problem çözme, strateji, hız</td><td class="n">151–300</td></tr>
+<tr><td>Üslü ifadeler (8. sınıf)</td><td class="n">301–400</td></tr>
+<tr><td>Ortak bölen, EBOB</td><td class="n">401–500</td></tr>
+</table>
+</div>
+</div>
+
+<h2>Güvenlik, reklam ve maliyet</h2>
+<div class="box">
+<ul>
+<li><b>Hesap ve veri yok.</b> Oyun üyelik istemez, ad, e-posta ya da konum toplamaz; ilerleme cihazda saklanır. İlk açılışta yaş sorulur ve 13 yaş altındaki oyunculara yalnızca çocuklara uygun, kişiselleştirilmemiş reklam gösterilir.</li>
+<li><b>Reklam yalnızca isteğe bağlı.</b> Oyunun akışında reklam yoktur; yalnızca can bitince “reklam izleyip devam et” seçeneği sunulur, öğrenci “Bölümler”e dönerek reklamsız devam edebilir. Sınıf kullanımında reklam görmeden oynamak için can bitince bölümü yeniden başlatmak yeterlidir.</li>
+<li><b>Ücret.</b> 1–100. bölümler ücretsizdir ve günlük sınır yoktur. Sonraki bölümler oyun içinde kazanılan tokenlarla 50’lik aşamalar hâlinde açılır; tek seferlik Premium (reklamsız, bütün aşamalar) isteğe bağlıdır, abonelik yoktur. Sınıf etkinlikleri için ilk 100 bölüm fazlasıyla yeterlidir.</li>
+<li><b>Diller.</b> Türkçe dahil 14 dil; yabancı uyruklu öğrenciler kendi dillerinde oynayabilir (Ayarlar → Dil).</li>
+</ul>
+</div>
+
+<div class="foot">
+  <div>
+    <b style="color:var(--ink)">Çarpan Avı: Matematik Oyunu</b> · Matoyun<br>
+    Google Play: <span class="kod">play.google.com/store/apps/details?id=com.matoyun.carpanavi</span><br>
+    App Store: yakında · Site: <span class="kod">erhan25.github.io</span> · İletişim: <span class="kod">erhanyazici7@outlook.com</span><br>
+    <span class="small">Oyun bir matematik öğretmeni tarafından geliştirilmiştir. Geri bildirimleriniz sonraki sürümleri şekillendirir.</span>
+  </div>
+  <div class="qr" id="qr" aria-label="Google Play bağlantısı için kare kod"></div>
+</div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+try {
+  new QRCode(document.getElementById("qr"), { text: "https://play.google.com/store/apps/details?id=com.matoyun.carpanavi",
+    width: 90, height: 90, correctLevel: QRCode.CorrectLevel.M });
+  var img = document.querySelector("#qr img, #qr canvas"); if (img) { img.style.width = "24mm"; img.style.height = "24mm"; }
+} catch (e) {}
+</script>
+</body>
+</html>
